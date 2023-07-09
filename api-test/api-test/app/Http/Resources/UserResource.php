@@ -18,7 +18,9 @@ class UserResource extends JsonResource
         return [
             'Identificador' => $this->id,
             'Nombre'     => strtoupper($this->name),
-            'Correo'    => $this->email
+            'Correo'    => $this->email,
+            'Pass'    => $this->password
+
         ];
         
     }
