@@ -21,6 +21,11 @@ class PedidoController extends Controller
     public function mostrar()
     {
         $pedido = Pedido::find(1);
+        /*
+        ESTE NO SALEEEEEEE
+        return response()->json($pedido->mesa->numero);
+        */
+
         return response()->json($pedido);
     }
 
