@@ -18,6 +18,12 @@ class PedidoController extends Controller
         return PedidoResource::collection($pedido);
     }
 
+    public function mostrar()
+    {
+        $pedido = Pedido::find(1);
+        return response()->json($pedido);
+    }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -44,11 +50,7 @@ class PedidoController extends Controller
         //
     } 
     
-    public function mostrar()
-    {
-        $pedido = Pedido::find(1);
-        return response()->json($pedido);
-    }
+   
 
     /**
      * Show the form for editing the specified resource.
