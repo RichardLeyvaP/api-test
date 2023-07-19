@@ -20,9 +20,9 @@ class Pedido extends Model
     ];
 
 //definoiendo relacion 1Mesa:mPedidos
-public function mesa()
+public function mesas():BelongsTo
 {
     
-    return $this->belongsTo(Mesa::class);
+    return $this->belongsTo(Mesa::class,'mesa_id');
 }    
 }

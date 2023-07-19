@@ -20,7 +20,7 @@ class Mesa extends Model
         'pedido_id'
     ];
 
-public function pedido()
+public function pedidos():HasMany
 {
     return $this->hasMany(Pedido::class);
 }
